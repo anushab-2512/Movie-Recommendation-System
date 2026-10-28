@@ -1,9 +1,6 @@
 
 import os
 import streamlit as st
-from dotenv import load_dotenv
-
-load_dotenv()
 
 TMDB_API_KEY = os.getenv("TMDB_API_KEY", "")
 
