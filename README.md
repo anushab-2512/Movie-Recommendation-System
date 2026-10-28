@@ -22,8 +22,6 @@ Machine Learning: scikit-learn, numpy, pandas
 
 Visualization: matplotlib, seaborn
 
-Version Control: GitHub
-
 ## Project Structure
 
 movie-recommendation-system/
@@ -48,11 +46,6 @@ pip install -r requirements.txt
 Run the app:
 
 streamlit run app.py
-
-## Live Demo
-
-Streamlit App: http://localhost:8501/
-GitHub Repo: https://github.com/Aishwarya04R/movie-recommendation-success-prediction
 
 ## This project demonstrates:
 
