@@ -1,9 +1,18 @@
+
 import os
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
 
-TMDB_API_KEY = os.getenv("TMDB_API_KEY")
+TMDB_API_KEY = os.getenv("TMDB_API_KEY", "")
+
+if not TMDB_API_KEY:
+    try:
+        TMDB_API_KEY = st.secrets["TMDB_API_KEY"]
+    except (KeyError, FileNotFoundError):
+        TMDB_API_KEY = ""
+
 
 import os
 import pickle
