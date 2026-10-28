@@ -1,58 +1,91 @@
-## Movie Recommendation and Success Prediction System
+# 🎬 Movie Recommendation and Success Prediction System
 
-A web-based machine learning project that recommends movies based on content similarity and predicts movie success. Built with Python, scikit-learn, Pandas, and Streamlit, and deployed on Streamlit Cloud for easy access.
+A machine learning web application that recommends similar movies using content-based filtering and predicts movie success using machine learning. Built with Python, Scikit-learn, Pandas, and Streamlit, and deployed on Streamlit Community Cloud.
 
-## Features
+## 🚀 Live Demo
 
-📌 Movie recommendation engine based on cosine similarity of movie features.
+**Try the application here:** [Movie Intelligence System](https://movie-recommendation-success-predictor-system.streamlit.app/)
 
-📌 Success prediction model using machine learning.
+## ✨ Features
 
-📌 Clean, interactive Streamlit web app.
+- 🎥 **Movie Recommendation:** Recommends five similar movies based on content similarity.
+- 📊 **Hit / Flop Prediction:** Predicts movie success using a machine learning classifier.
+- 🖼️ **Movie Posters:** Displays movie posters alongside recommendations using TMDB.
+- 🖥️ **Interactive Web Interface:** Simple and user-friendly Streamlit application.
+- ☁️ **Cloud Deployment:** Accessible online through Streamlit Community Cloud.
 
-📌 Uses preprocessed .pkl files for fast loading.
+## 🛠️ Tech Stack
 
-📌 Deployed live via Streamlit Cloud.
+- **Programming Language:** Python
+- **Frontend & Web Framework:** Streamlit
+- **Machine Learning:** Scikit-learn
+- **Data Processing:** Pandas, NumPy
+- **Recommendation System:** CountVectorizer, Cosine Similarity
+- **Success Prediction:** TF-IDF, Random Forest Classifier
+- **Visualization:** Matplotlib, Seaborn
+- **Movie Data & Posters:** TMDB API
 
-## Tech Stack
+## 📂 Project Structure
 
-Frontend & Deployment: Streamlit
+```text
+Movie-Recommendation-System/
+├── app.py
+├── movies.pkl
+├── movies_dict.pkl
+├── requirements.txt
+├── contents/
+│   ├── tmdb_5000_movies.csv
+│   └── tmdb_5000_credits.csv
+├── MovieRSRP.ipynb
+├── README.md
+├── .gitignore
+└── screenshots/
+    ├── msr2.png
+    ├── msr3.png
+    ├── msr4.png
+    └── msr5.png
+```
 
-Machine Learning: scikit-learn, numpy, pandas
+## ⚙️ How to Run Locally
 
-Visualization: matplotlib, seaborn
+### 1. Clone the repository
 
-## Project Structure
+```bash
+git clone https://github.com/anushab-2512/Movie-Recommendation-System.git
+cd Movie-Recommendation-System
+```
 
-movie-recommendation-system/
-│── app.py                # Streamlit web app
-│── main.py               # ML pipeline / training code
-│── movies.pkl            # Preprocessed movies dataset
-│── movies_dict.pkl       # Dictionary of movies
-│── similarity.pkl        # Similarity matrix
-│── requirements.txt      # Dependencies
+### 2. Install dependencies
 
-│── screenshots/ msr2, msr3, msr4, msr5
-
-# Project screenshots
-│── msr2, msr3, msr4, msr5           # Project documentation
-
-## How to Run Locally
-
-Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
 
-Run the app:
+### 3. Configure the TMDB API key (optional)
 
+To display movie posters, configure your TMDB API key using an environment variable or Streamlit secrets. Never commit your API key to GitHub.
+
+### 4. Run the application
+
+```bash
 streamlit run app.py
+```
 
-## This project demonstrates:
+Open the local URL displayed in your terminal to use the application.
 
-> Data preprocessing & feature engineering
+## 🎯 Key Concepts Demonstrated
 
-> Machine learning model development
+- Data preprocessing and feature engineering
+- Content-based movie recommendation
+- Text vectorization and cosine similarity
+- Machine learning model development
+- Interactive web application development
+- Cloud deployment using Streamlit Community Cloud
+- Integration with an external API
 
-> Web app deployment (Streamlit Cloud)
+## 👩‍💻 Author
 
-> Working with large real-world datasets
+**Anusha B.**
+
+- GitHub: [anushab-2512](https://github.com/anushab-2512)
+- Live Project: [Movie Intelligence System](https://movie-recommendation-success-predictor-system.streamlit.app/)
